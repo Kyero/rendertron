@@ -5,6 +5,8 @@
     "https://id.kyero.com",
     "https://devmodo.com",
     "https://www.devmodo.com",
-    "https://id.devmodo.com"
+    "https://id.devmodo.com",
+    "https://kyero-staging-frontend-proxy.herokuapp.com",
+    "https://www.kyero-staging-frontend-proxy.herokuapp.com"
   ]
 }
