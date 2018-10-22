@@ -34,6 +34,12 @@ Deploying to Heroku can be done easily thanks to their [container registry](http
    heroku container:push web --app kyero-staging-rendertron
    ```
 
+4. Release it!
+
+   ```shell
+   heroku container:release web --app kyero-staging-rendertron
+   ```
+
 > **NOTE**: the nginx buildback / rendertron doesn't deal too well with credentials, so you might need to remove HTTP basic auth credentials if they are in place (like @ staging).
 
 > 💡 We could eventually push this image as a dyno of `frontend` (rather to its own app) but we would need a way to forward HTTP requests from one dyno (`web`) to another (`rendertron`), which I don't think is possible at the moment.
